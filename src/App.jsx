@@ -308,8 +308,8 @@ const translations = {
     },
     hero: {
       title: "Sog'lig'ingiz — bizning ustuvor vazifamiz",
-      desc: "TB profilaktikasi, erta aniqlash va davolash. Markaz zamonaviy laboratoriya va diagnostika uskunalari bilan jihozlangan. Qabulga yozilish faqat DMED ilovasi orqali amalga oshiriladi.",
-      extra: "Markaz hududida Buxoro davlat tibbiyot instituti ftiziatriya va pulmonologiya kafedrasi joylashgan.",
+      desc: "Buxoro viloyati ftiziatriya va pulmonologiya markazi — nafas tizimi kasalliklarini oldini olish, erta aniqlash va davolash bo‘yicha ixtisoslashgan zamonaviy muassasa. Tajribali shifokorlar jamoasi, raqamli rentgen, PZR/GenXpert, spirometriya va keng laboratoriya imkoniyatlari aniq tashxis va samarali davolanishni ta’minlaydi. Biz bemorga qulay, xavfsiz va e’tiborli xizmat ko‘rsatishni ustuvor deb bilamiz.",
+      extra: "Qabulga yozilish faqat DMED ilovasi orqali amalga oshiriladi. Markaz hududida Buxoro davlat tibbiyot instituti ftiziatriya va pulmonologiya kafedrasi faoliyat yuritadi, bu esa amaliyot va ilm-fan uyg‘unligini ta’minlaydi.",
       ctaDmed: "DMED ilovasi orqali yozilish",
       ctaRoute: "Marshrutni qurish",
     },
@@ -389,8 +389,8 @@ const translations = {
     },
     hero: {
       title: "Ваше здоровье — наш приоритет",
-      desc: "Профилактика, раннее выявление и лечение туберкулёза. Центр оснащён современной лабораторией и диагностикой. Запись на приём проводится только через приложение DMED.",
-      extra: "На территории центра расположена кафедра фтизиатрии и пульмонологии БухГМИ.",
+      desc: "Бухарский областной центр фтизиатрии и пульмонологии — современное учреждение, специализирующееся на профилактике, ранней диагностике и лечении заболеваний дыхательной системы. Команда опытных врачей, цифровая рентгенография, ПЦР/GenXpert, спирометрия и расширенная лаборатория позволяют ставить точный диагноз и подбирать эффективную терапию. Мы ставим во главу угла безопасность, комфорт и внимательное отношение к каждому пациенту.",
+      extra: "Запись на приём ведётся только через приложение DMED. На территории центра работает кафедра фтизиатрии и пульмонологии БухГМИ, что объединяет практику, науку и обучение молодых специалистов.",
       ctaDmed: "Записаться через приложение DMED",
       ctaRoute: "Построить маршрут",
     },
