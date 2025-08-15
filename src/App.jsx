@@ -281,8 +281,8 @@ const fallbackHero = "/hero.jpg";
 const telegramLink = "https://t.me/buxoro_ftiz_kanal";
 const complaintsBotLink = "https://t.me/buxoro_ftizmurojaat_bot";
 const dmedLink = "https://play.google.com/store/apps/details?id=uz.uzinfocom.dmed&hl=ru&pli=1";
-const mapExternal = "https://maps.app.goo.gl/yus8PspVqkPTN8No7";
-const mapSrc = `https://www.google.com/maps?output=embed&q=${encodeURIComponent(mapExternal)}`;
+const mapExternal = "https://maps.google.com/?q=39.74376333796581,64.40053440224702";
+const mapSrc = "https://www.google.com/maps?q=39.74376333796581,64.40053440224702&hl=ru&z=18&output=embed";
 
 const contacts = {
   address: "Buxoro shahri, Namozgoh ko'chasi, 240-uy. ZARMED klinikasi ro'parasida",
