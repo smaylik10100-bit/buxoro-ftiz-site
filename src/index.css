@@ -3,7 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Simple fade-in animation on scroll */
+/* Reveal-on-scroll animation (already used in the app) */
 .reveal {
   opacity: 0;
   transform: translateY(10px);
@@ -12,4 +12,50 @@
 .reveal.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* =========================
+   Modern animated background
+   ========================= */
+html, body, #root {
+  min-height: 100%;
+}
+
+body {
+  /* Soft medical teal/green/blue gradient */
+  background: linear-gradient(135deg, #e6fffb 0%, #e8f6ff 25%, #eaf7ef 50%, #e6fffb 75%, #e8f6ff 100%);
+  background-size: 300% 300%;
+  animation: bg-shift 20s ease infinite;
+  background-attachment: fixed; /* subtle parallax */
+}
+
+/* Optional floating glow spots for depth */
+body::before, body::after {
+  content: "";
+  position: fixed;
+  inset: -20% -10% auto auto;
+  width: 60vmax;
+  height: 60vmax;
+  background: radial-gradient(closest-side, rgba(56,189,248,.15), transparent 60%);
+  filter: blur(40px);
+  z-index: -1;
+  pointer-events: none;
+}
+body::after {
+  inset: auto auto -25% -10%;
+  background: radial-gradient(closest-side, rgba(16,185,129,.12), transparent 60%);
+}
+
+@keyframes bg-shift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Make main content cards slightly lifted on white backgrounds */
+.card-elev {
+  background: rgba(255,255,255,0.9);
+  backdrop-filter: saturate(120%) blur(2px);
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(2, 132, 199, 0.06);
 }
