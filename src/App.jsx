@@ -29,24 +29,24 @@ export default function App() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900">
       {/* Header */}
-      <header className="sticky top-0 z-50 backdrop-blur bg-white/80 border-b">
+      <header className="sticky top-0 z-50 backdrop-blur bg-white/85 border-b shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16 gap-4">
+          <div className="flex items-center justify-between h-24 gap-4">
             <div className="flex items-center gap-3">
               <img
                 src={logoSrc}
                 alt="Logo"
-                className="h-10 w-10 rounded-xl object-contain ring-1 ring-gray-200 bg-white"
+                className="h-12 w-12 rounded-xl object-contain ring-1 ring-gray-200 bg-white"
                 onError={(e) => ((e.currentTarget.src = fallbackLogo))}
               />
               <div className="leading-tight">
-                <div className="font-bold text-sm sm:text-base">{t.header.title}</div>
-                <div className="text-xs text-gray-600">{t.header.subtitle}</div>
+                <div className="font-extrabold text-xl sm:text-2xl lg:text-3xl">{t.header.title}</div>
+                <div className="text-sm md:text-base text-gray-600">{t.header.subtitle}</div>
               </div>
             </div>
             <nav className="hidden md:flex items-center gap-6">
               {menu.map((m) => (
-                <a key={m.id} href={`#${m.id}`} className="text-sm hover:text-teal-600">
+                <a key={m.id} href={`#${m.id}`} className="text-base md:text-lg hover:text-teal-600">
                   {m.label}
                 </a>
               ))}
@@ -57,7 +57,7 @@ export default function App() {
                 href={telegramLink}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center rounded-2xl bg-teal-600 text-white px-3 py-2 text-sm hover:bg-teal-700"
+                className="inline-flex items-center rounded-2xl bg-teal-600 text-white px-4 py-2.5 text-base hover:bg-teal-700"
               >
                 Telegram
               </a>
@@ -65,7 +65,7 @@ export default function App() {
                 href={complaintsBotLink}
                 target="_blank"
                 rel="noreferrer"
-                className="inline-flex items-center rounded-2xl bg-red-600 text-white px-3 py-2 text-sm hover:bg-red-700"
+                className="inline-flex items-center rounded-2xl bg-red-600 text-white px-4 py-2.5 text-base hover:bg-red-700"
               >
                 {t.header.complaints}
               </a>
