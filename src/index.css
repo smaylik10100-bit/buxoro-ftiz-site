@@ -1,0 +1,15 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Simple fade-in animation on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity .6s ease, transform .6s ease;
+}
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
